@@ -1,0 +1,10 @@
+service: landing-demo
+stage: dev
+
+secret: mysecret123
+
+datamodel: datamodel.graphql
+
+schema: prisma.graphql
+
+cluster: public-tundrashirt-172/prisma-eu1

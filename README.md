@@ -14,7 +14,40 @@ type User {
 
 ## basicResolver
 
-## filtering & sorting
+Sample query for Playground:
+
+```graphql
+query {
+  userList {
+    id
+    name
+    isAdmin
+  }
+}
+```
+
+## filtering
+
+Sample query for Playground:
+
+```graphql
+query {
+  userList(name: "Sa") {
+    id
+    name
+    isAdmin
+  }
+}
+```
 
 ## mutations
 
+```graphql
+mutation {
+  createUser(name: "Alice") {
+    id
+    name
+    isAdmin
+  }
+}
+```
